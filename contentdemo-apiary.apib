@@ -3,13 +3,24 @@ FORMAT: 1A
 # Content Negotiation
 
 # User [/user]
-## GET 
+## Retrieve [GET]
+
+- Request representation for humans
+    - Headers
+    
+            Accept: text/html
+
 - Response 200 (text/html)
     
         <div>
             <h2>Zdenek</h2>
             <img src="https://www.gravatar.com/avatar/cb2527e0c321fc1eb6753c06f45da93c?s=136&r=PG&d=https://i.stack.imgur.com/T119o.png"></img>
         </div>
+
+- Request representation for machines
+    - Headers
+    
+            Accept: application/json
 
 - Response 200 (application/json)
 
