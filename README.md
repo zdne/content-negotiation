@@ -1,12 +1,14 @@
 # Content Negotiation and API Design
 
+[Apiary Documentation for this API](http://docs.contentdemo.apiary.io/#)
+
 This is a very simple API description that demonstrates how content negotiation works. 
 
 This also demonstrates a very good **API design pattern** in the case where you are exposing the same resource twice: Once for human readers (Web) and once for machines (API). 
 
-In other words: 
+In other words:
 
-> _"If you have a web, you already have an API"_.
+> _"If you have a web, you already have an API."_
 
 ## How it Works
 
