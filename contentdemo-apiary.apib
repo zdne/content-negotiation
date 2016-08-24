@@ -1,0 +1,19 @@
+FORMAT: 1A
+
+# Content Negotiation
+
+# User [/user]
+## GET 
+- Response 200 (text/html)
+    
+        <div>
+            <h2>Zdenek</h2>
+            <img src="https://www.gravatar.com/avatar/cb2527e0c321fc1eb6753c06f45da93c?s=136&r=PG&d=https://i.stack.imgur.com/T119o.png"></img>
+        </div>
+
+- Response 200 (application/json)
+
+        { 
+            "name": "Zdenek",
+            "picture": "https://www.gravatar.com/avatar/cb2527e0c321fc1eb6753c06f45da93c?s=136&r=PG&d=https://i.stack.imgur.com/T119o.png"
+        }
