@@ -2,16 +2,28 @@
 
 This is a very simple API description that demonstrates how content negotiation works. 
 
-This also demonstrates a good API design patter in the case where you are exposing the same resource twice: Once for human readers (Web) and once for machines (API).
+This also demonstrates a very good **API design pattern** in the case where you are exposing the same resource twice: Once for human readers (Web) and once for machines (API). 
 
-To retrieve the HTML represetnation of the user resource:
+In other words: 
+
+> _"If you have a web, you already have an API"_.
+
+## How it Works
+
+At its most basic example a content type is negotiated using the [`Accept`](https://github.com/for-GET/know-your-http-well/blob/master/headers.md#content-negotiation) HTTP header while making a request from client.
+
+If everything goes well, a server responds with the matching [`Content-Type`](https://github.com/for-GET/know-your-http-well/blob/master/headers.md#metadata) HTTP header.
+
+### Example Requests
+
+To retrieve the HTML _represetnation_ of the `user` resource:
 
 ```
 GET http://private-25959-contentdemo.apiary-mock.com/user
 Accept: text/html
 ```
 
-To Retrieve the JSON represetnation of the user resource:
+To retrieve the JSON _represetnation_ of the `user` resource:
 
 ```
 GET http://private-25959-contentdemo.apiary-mock.com/user
